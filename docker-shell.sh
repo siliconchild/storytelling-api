@@ -6,8 +6,8 @@ set -e
 # Define some environment variables
 export IMAGE_NAME="stai-api-service"
 export BASE_DIR=$(pwd)
-export PERSISTENT_DIR=$(pwd)/../persistent-folder/
-export SECRETS_DIR=$(pwd)/../secrets/
+export PERSISTENT_DIR=$(pwd)/persistent-folder/
+export SECRETS_DIR=$(pwd)/secrets/
 
 # Build the image based on the Dockerfile
 docker build -t $IMAGE_NAME -f Dockerfile .
